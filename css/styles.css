@@ -1,0 +1,114 @@
+body {
+  height:100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #20175d;
+}
+
+.container {
+  border:1px solid black;
+  width: 100vw;
+  height:100vh;
+  padding:20px;
+  /* max-width: 700px; */
+  display: flex;
+  flex-direction:column;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  text-align: center;
+  align-items:center;
+  /* margin-top: 8em; */
+
+  background: radial-gradient(circle 350px,  rgba(245, 39, 145, 0.30), rgba(245, 39, 145, 0.20),rgba(245, 39, 145, 0.10));
+  background-repeat: no-repeat;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  width: 100%;
+  color: #20175d;
+  font-family: "DM Serif Display", serif;
+  font-size: 3rem;
+}
+
+button {
+  width: 64vw;
+  /* width: 28.5%; */
+  height:auto;
+  border-radius: 40px;
+  padding: 20px 40px;
+  margin-top: 1.5em;
+  text-align: center;
+  color: white;
+  background-color: #ed59d2;
+  font-family: sans-serif;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  /* max-width: 300px; */
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+.available {
+  width: 90%;
+}
+
+.all-pets {
+  padding: 0;
+  list-style: none;
+}
+
+.all-pets li {
+  padding: 1em;
+}
+
+.pet-name {
+  background-color: #3a2173;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2px;
+}
+
+.ruby {
+  height: 25%;
+  max-height: 250px;
+  width: 75%;
+  max-width:300px;
+}
+
+
+@media screen and (min-width:768px){
+  .container{
+    background: radial-gradient(circle 550px,  rgba(245, 39, 145, 0.30), rgba(245, 39, 145, 0.20),rgba(245, 39, 145, 0.10));
+    background-repeat: no-repeat;
+  }
+ button{
+   width:40vw;
+ }
+}
+
+@media screen and (min-width:1200px){
+  .container{
+    background: radial-gradient(circle 750px,  rgba(245, 39, 145, 0.30), rgba(245, 39, 145, 0.20),rgba(245, 39, 145, 0.10));
+    background-repeat: no-repeat;
+  }
+ button{
+   width:20vw;
+ }
+}
